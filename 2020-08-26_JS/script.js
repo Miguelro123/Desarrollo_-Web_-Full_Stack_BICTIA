@@ -1,23 +1,26 @@
-// Var permite realizar modificaciones a las variables. Al igual que let
-// const- constante que no permite cambair su valor y se debe asignar el valor una vez declarada
+/* Var me permite realizar modificaciones a las variables. Al igual que let.
+Const- Constante que no permite cambiar su valor y se debe asignarle el valor una vez declarada */
 
-//ES6 GLOBAL
+//ES5- GLOBAL
 
-var nombre5 = "maria sanches";
-nombres5= "MAria Ruiz"; //permite modificar el valor
+var nombre5= "Maria Perez";
 
+nombre5= "Maria Sanchez"; /* Me permite modificar su valor */
+console.log(nombre5);
 
-//ES&
+//ES6
+let nombreLet= "Laura Martinez"; /* Let puede ser modificado */
+nombreLet = "Laura Perez";
+console.log(nombreLet);
 
-//const nombre6 = "Pedro Sanchez";
-//nombre6 = "Pedro Garcia"; // No se puede modificar por ser una variable de tipo constante. Generara un error
+const nombre6= "Pedro Sanchez"; /* Al declarar su valor no puede ser modificado y el navegador nos presentara error */
+nombre6= "Pedro Garcia"; 
 
-let nombreLet = "Laura Martinez";
-nombreLet = "Laura Perez"; // let puede ser modificado
+/* Alcance global - Alcance Local */
 
-// GLOBAL - se puede modificar en caulquier seccion del codigo
+/* GLOBAL - se puede modificar en cualquier seccion del codigo */
 
-var global = 0;
+var global= 0;
 
 function varGlobal(){
     for (var i = 0; i < 5; i++) {
