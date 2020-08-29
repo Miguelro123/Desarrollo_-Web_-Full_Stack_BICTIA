@@ -165,28 +165,27 @@ if (pais== "colombia" || pais=="peru" || pais=="mexico"){
 
 // CALCULADORA
 
-let operacion = "suma";
+let operacion = prompt("Escoja una operación: suma, resta, multiplicacion, division");
+let num1= parseFloat(prompt("Ingrese un número"));
+let num2= parseFloat(prompt("ingrese un segundo número"));
+/* La variable que evalua */
 switch (operacion) {
-    case "suma":
-        let num1= parseFloat(prompt("ingrese un numero"))
-        let num2= parseFloat(prompt("ingrese segundo numero"))
+    case "suma": /* Si es igual a suma */
+        /* parseFloat- parseInt: Son métodos que permite modificar la tipología de un dato. Convirtiendolos a enteros o decimales. */
         document.write("El resultado de la suma es: " + (num1+num2))
         break;
     case "resta":
-        let num1= parseFloat(prompt("ingrese un numero"))
-        let num2= parseFloat(prompt("ingrese segundo numero"))
         document.write("El resultado de la resta es: " + (num1-num2))
-        break; 
-    case "multiplicar":
-        let num1= parseFloat(prompt("ingrese un numero"))
-        let num2= parseFloat(prompt("ingrese segundo numero"))
+        break; /* Se rompe la ejecución de esye boque de código y no sigue evaluando más cosas. */
+    case "multiplicacion":
         document.write("El resultado de la multiplicacion es: " + (num1*num2))
         break; 
-    case "dividir":
-        let num1= parseFloat(prompt("ingrese un numero"))
-        let num2= parseFloat(prompt("ingrese segundo numero"))
+    case "division":
         document.write("El resultado de la division es: " + (num1/num2))
         break;        
-    default:
+    default: /* Si ninguno de los casos se cumple */
+        document.write("Esta operación no existe")
         break;
 }
+
+/* Los casos de String se coloca entre "" y en los casos tipo number se deja SIN comillas, libre 1 2 3 */
