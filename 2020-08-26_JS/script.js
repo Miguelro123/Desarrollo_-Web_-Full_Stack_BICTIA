@@ -41,7 +41,7 @@ function varLocal() {
 varLocal();
 /* console.log(local) Nos arroja un error, ya que es una variable local */
 
-
+var x=90; //global
 function varPrueba() {
     var x = 70;
     if (true) { /* Se cumple la función */
@@ -50,31 +50,36 @@ function varPrueba() {
     }
     console.log(x); // Aquí aparece 50
 }
+console.log(x)
 
 
 function letPrueba() {
     let y = 30;
     if (true) {
-        let y = (30*2); // Variable diferente, solo se queda entre sus llaves
+        let y = (30*2); // Variable diferente, solo se queda entre sus llaves. Solo existe dentro de estas llaves-bloque
         console.log("La multiplicación dio: " + y); // Me imprime 60
     }
     console.log("El valor inicial es: " + y); /* Me imprime 30 */
 }
 
-// let variable = document.getElementById("variable")
-// function name(params) {
+/* Let: Se limita al bloque (scope) o su alcance.
+CONST: No permite una vez declarado o asignado un valor.
+VAR: Modifica la variable sin importar su bloque o alcance. */
 
-// }
+let variable= document.getElementById("variable")
+function name(params) {
 
-// variable.onclick = function() {
-//     nombreFuncion()
-// }
+}
+variable.onclick= function () {
+     nombreFuncion()
+}
 
-// variable.addEventListener("click", ()=>{
+/* EVENT */
+variable.addEventListener("click", ()=>{
 
-// })
+})
 
-
+/* FUNCIONES!! */
 
 // FUNTIONS
 // Funcion tradicional ya que se define con la palabra reservada function
