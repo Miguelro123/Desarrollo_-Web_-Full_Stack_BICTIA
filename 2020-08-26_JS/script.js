@@ -97,9 +97,13 @@ En el caso de función flecha */
 let sumar=(a,b)=> a+b;
 console.log(sumar(10, 15));
 
+console.log(sumar(13, 13));
+
+
 let hola= function() {
-        return "hola, como estas"
+    return "hola, como estas"
 }
+
 console.log(hola());
 
 // CONDICIONALES- flujo del programa dependiendo de unas condiciones que se cumplen
