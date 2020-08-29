@@ -1,33 +1,42 @@
-const answer = document.querySelector('#answer')
+const suma= document.getElementById("Sumar"); 
+const resta= document.getElementById("Restar"); 
+const multiplicacion= document.getElementById("Multiplicar"); 
+const division= document.getElementById("Dividir"); 
 
-    function cualquierFuncion(){
-        var num1 = parseInt(document.querySelector('#input1').value);
-        var num2 = parseInt(document.querySelector('#input2').value);
-        var obj={
-            'num1': num1,
-            'num2': num2
-        }
-        return obj
-    }
+function reset() {
+    num1=parseFloat(document.getElementById("num1").value = "");
+    num2=parseFloat(document.getElementById("num2").value = "");
+}
 
-    function suma(){
-        var algo = cualquierFuncion()
-        var resultadoSuma = algo.num1 + algo.num2
-        answer.innerHTML=resultadoSuma
-    }
-    function resta(){
-        var algo = cualquierFuncion()
-        var resultadoSuma = algo.num1 - algo.num2
-        answer.innerHTML=resultadoSuma
-    }
-    function multiplicacion(){
-        var algo = cualquierFuncion()
-        var resultadoSuma = algo.num1 * algo.num2
-        answer.innerHTML=resultadoSuma
-    }
-    function division(){
-        var algo = cualquierFuncion()
-        var resultadoSuma = algo.num1 / algo.num2
-        answer.innerHTML=resultadoSuma
-    }
+function setValue() {
+    let num1=parseFloat(document.getElementById("num1").value);
+    let num2=parseFloat(document.getElementById("num2").value);
+    return[num1, num2];
+} 
+suma.addEventListener("click", ()=>{
     
+    [num1,num2]=setValue();
+    let ans= num1 + num2;
+    reset();
+    document.getElementById("res").value = ans;
+})
+resta.addEventListener("click", ()=>{
+    [num1,num2]=setValue();
+    let ans= num1 - num2;
+    reset();
+    document.getElementById("res").value = ans;
+    
+})
+division.addEventListener("click", ()=>{
+    [num1,num2]=setValue();
+    let ans= num1 / num2;
+    reset();
+    document.getElementById("res").value = ans;
+})
+multiplicacion.addEventListener("click", ()=>{
+    [num1,num2]=setValue();
+    let ans= num1 * num2;
+    reset();
+    document.getElementById("res").value = ans;
+   
+})
