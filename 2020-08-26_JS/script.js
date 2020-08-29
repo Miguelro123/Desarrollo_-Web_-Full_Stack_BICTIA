@@ -16,28 +16,30 @@ console.log(nombreLet);
 const nombre6= "Pedro Sanchez"; /* Al declarar su valor no puede ser modificado y el navegador nos presentara error */
 nombre6= "Pedro Garcia"; 
 
+
 /* Alcance global - Alcance Local */
 
 /* GLOBAL - se puede modificar en cualquier seccion del codigo */
 
-var global= 0;
+var global= 0; /* Entra como 0 */
 
 function varGlobal(){
     for (var i = 0; i < 5; i++) {
-        global = 1;
+        global = 1; /* En cada vuelta el valor de la variable i se le va asignar a la global */
     }
 }
 varGlobal();
-console.log(global) // Nos imprime 4
+console.log(global) /* Nos imprime 4 */
 
-// var LOCAL
+/* var LOCAL */
 
 function varLocal() {
-    var local= "Hello world"; // Varaible local
+    var local= "Hola mundo!!"; /* ESTO YA ES UNA VARIABLE LOCAL */
+    console.log(local)
 }
 
 varLocal();
-//console.log(local); // Muestra error por que la variable esta decalrada dentro del codigo
+/* console.log(local) Nos arroja un error, ya que es una variable local */
 
 function varPrueba() {
     var x = 70;
