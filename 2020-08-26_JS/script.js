@@ -153,6 +153,16 @@ if (nota >= 4.5 && nota <= 5) {
     document.write("Ingrese un número entre 0 y 5")
 }
 
+/* OR Al menos una condición se debe cumplir para que ejecute el bloque de código */
+
+let pais= "peru";
+
+if (pais== "colombia" || pais=="peru" || pais=="mexico"){
+    document.write("<br> El áis pertenece a Latino América")
+} else {
+    document.write("A donde pertenece ese pais?")
+}
+
 // CALCULADORA
 
 let operacion = "suma";
