@@ -81,21 +81,18 @@ variable.addEventListener("click", ()=>{
 
 /* FUNCIONES!! */
 
-// FUNTIONS
-// Funcion tradicional ya que se define con la palabra reservada function
+/* Función tradicional, se define con la palabra reservada function */
 function soyUnaFuncion(num1, num2) {
-    // retorna un valor o un resultado del proceso
-    
-    return num1 + num2;
+    /* Retorna un valor o el resultado del proceso. Finaliza la ejecución del function */    
+    return num1+num2;
 }
 
-console.log(soyUnaFuncion); //arroja la estructura de l funcion
+console.log(soyUnaFuncion(5,3)); /* Me va arrojar la estructura de la función */
 
+/* FUNCIONES ANONIMAS */
 
-// FUNCIONES ANONIMAS
-
-// Se utilizan directamete sin un nombre
-// ejemplo funcion flecha
+/* Se utilizan directamete sin un nombre,
+En el caso de función flecha */
 
 let sumar=(a,b)=> a+b;
 console.log(sumar(10, 15));
