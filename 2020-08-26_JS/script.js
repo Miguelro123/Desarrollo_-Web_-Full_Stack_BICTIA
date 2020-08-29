@@ -114,15 +114,44 @@ let color=prompt("Ingrese un color en Inglés");
 if(color == "red") {
     document.write("<h1 style='color:red'> Si el color es red-rojo </h1>")
 } else {
-    document.write("<h1 style= ' color: " + color + "' > No el color es red, el color elegido fue " + color + "</h1>")
+    document.write("<h1 style=' color: " + color + "' > No el color no es red, el color elegido fue " + color + "</h1>")
 }
 
-// OPERADORES DE COMPARACION
+/*= ES DE ASIGNACIÓN
+OPERADORES DE COMPARACION
+== IGUALDAD
+=== ESTRICTAMENTE IGUAL TIENES QUE SER EL MISMO TIPO DE DATO .
+!= DIFERENTE O DISTINTO
+!== NO IDENTICO, HASTA EL TIPO DE DATO DEBE SER DIFERENTE
+< MENOR QUE 5 DESDE 4
+<= MENOR O IGUAL QUE 5 DESDE 5
+> MAYOR QUE 5 DESDE 6
+>= MAYOR O IGUAL QUE 5 DESDE 5
+*/
 
-// == IGAULDAD
-// === ESTRICTAMENTE IGUAL TIENES QUE SER EL MISMO TIPO DE DATO 
-// != DIFERENTE O DISTINTO
-// !== NO IDENTICO, HASTA EL TIPO DE DATO DEBE SER DIFERENTE
+let year= 2021;
+if (year !=2020) { /* ES DIFERENTE A 2020 */
+    document.write("El año es diferente a 2020")
+} else { /* SI ES IGUAL */
+    document.write("Sí, el año es 2020")    
+}
+
+/* OPERADORES LOGICOS
+&& AND -- y
+|| or -- ó
+! NOT - NEGACIÓN, QUE NO SE CUMPLE ALGO
+*/
+
+let nota= 3.7;
+/* Creamos el rango enter 4.5 y 5 */
+if (nota >= 4.5 && nota <= 5) {
+    document.write("Felicidades has ganado la beca!!")
+  /* Creamos un rango entre 4.499999 y 0 */
+} else if(nota < 4.5 && nota >=0){
+    document.write("Vuelve a intentarlo !!")
+}else {
+    document.write("Ingrese un número entre 0 y 5")
+}
 
 // CALCULADORA
 
