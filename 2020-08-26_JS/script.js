@@ -106,9 +106,10 @@ let hola= function() {
 
 console.log(hola());
 
-// CONDICIONALES- flujo del programa dependiendo de unas condiciones que se cumplen
 
-let color=prompt("INgrese el color en INgles");
+/* CONDICIONALES- Flujo del programa a partir de una condición, depende de otra parte del codigo */
+
+let color=prompt("Ingrese un color en Inglés");
 
 if(color == "red") {
     document.write("<h1 style='color:red'> Si el color es red-rojo </h1>")
