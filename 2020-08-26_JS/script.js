@@ -31,7 +31,7 @@ function varGlobal(){
 varGlobal();
 console.log(global) /* Nos imprime 4 */
 
-/* var LOCAL */
+/* var LOCAL- es declarado dentro de un bloque de codigo */
 
 function varLocal() {
     var local= "Hola mundo!!"; /* ESTO YA ES UNA VARIABLE LOCAL */
@@ -41,23 +41,24 @@ function varLocal() {
 varLocal();
 /* console.log(local) Nos arroja un error, ya que es una variable local */
 
+
 function varPrueba() {
     var x = 70;
-    if (true) {
+    if (true) { /* Se cumple la función */
         var x= 50;
-        console.log(x); // Aqui aparece 50
+        console.log(x); // Aquí aparece 50
     }
-    console.log(x); // aqui aparece 50
+    console.log(x); // Aquí aparece 50
 }
 
 
 function letPrueba() {
-    let y = 70;
+    let y = 30;
     if (true) {
-        let y = 50;
-        console.log(y); // Aqui aparece 50
+        let y = (30*2); // Variable diferente, solo se queda entre sus llaves
+        console.log("La multiplicación dio: " + y); // Me imprime 60
     }
-    console.log(y); // aqui aparece 70
+    console.log("El valor inicial es: " + y); /* Me imprime 30 */
 }
 
 // let variable = document.getElementById("variable")
