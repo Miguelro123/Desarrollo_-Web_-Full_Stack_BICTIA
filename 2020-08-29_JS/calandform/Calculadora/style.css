@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(116, 109, 92);
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+    background: #3baa57;
+    box-shadow: 5px 10px 20px rgb(113, 134, 18);
+}
+
+.titulo {
+    margin: auto;
+    font-size: 20px;
+}
+
+.lugarnum {
+    margin-top: 20px;
+}
+
+input {
+    border: 0;
+    padding: 10px;
+    background:  #d18c95;
+    margin: 5px;
+    box-shadow: 5px 10px 20px rgb(8, 31, 53);
+    border-radius: 50px;
+}
+
+::placeholder {
+    color: rgb(61, 120, 155);
+}
+
+.botones {
+    height: 90px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+button {
+    width: 20%;
+    height: 60%;
+    margin: auto;
+    border: 0;
+    border-radius: 50px;
+    font-size: 25px;
+    background:rgb(92, 173, 219);
+    color: rgb(223, 80, 127);
+    box-shadow: 5px 10px 20px rgb(8, 31, 53);
+}
+button:hover {
+    background-color: #184461;
+    color: rgb(223, 80, 127);;
+}
