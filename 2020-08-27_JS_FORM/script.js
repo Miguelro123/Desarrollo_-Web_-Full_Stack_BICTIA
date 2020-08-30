@@ -8,9 +8,17 @@ const nombreMensaje = document.getElementById('nombreMensaje')
 function validarFormulario(event) {
     event.preventDefault()
     if (inputName.value == ""){
+        swal("one problem", "error", "Error");
         inputName.classList.add('alert')
         nombreMensaje.innerText = 'Llena el campo del nombre por favor'
         inputName.placeholder = 'Ej.Pepito Perez'
     }
-    window.location = ""
+
+    if (inputName.value != "") {
+        swal("Good job!", "You clicked the button!", "success");
+        setTimeout (() =>{
+            window.location = ""
+        }, 2000)
+        
+    }
 }
