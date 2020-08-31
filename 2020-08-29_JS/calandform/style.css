@@ -1,14 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background: rgb(116, 109, 92);
-    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formContact {
+    width: 40%;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 100px;
+}
+
+.camposForm {
+    margin-bottom: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+
+div.camposForm > label {
+    margin-bottom: 10px;
+}
+
+.alert {
+    background-color: rgb(255, 206, 206);
+}
+
+.mensajeAlerta {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
 }
