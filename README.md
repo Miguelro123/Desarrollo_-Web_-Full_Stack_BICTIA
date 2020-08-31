@@ -10,7 +10,7 @@ Number | Projects | Date and time
 01 | [Varios](./2020-08-26_JS) | 26/08/2020
 02 | [Validación formularios](./2020-08-27_JS_FORM) | 27/08/2020
 03 | [Proyecto calculadora y formulario](./2020-08-29_JS/calandform) | 29/08/2020
-
+03 | [Repaso](./2020-08-31_JS) | 31/08/2020
 ---
 
 ## Author
