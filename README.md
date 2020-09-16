@@ -12,6 +12,7 @@ Number | Projects | Date and time
 03 | [Proyecto calculadora y formulario](./2020-08-29_JS/calandform) | 29/08/2020
 04 | [Repaso](./2020-08-31_JS) | 31/08/2020
 05 | [Bootstrap](./2020-09-01_Bootstrap) | 01/09/2020
+06 | [Tablas de multiplicar](./2020-09-15_tmultiplicar) | 15/09/2020
 ---
 
 ## Author
