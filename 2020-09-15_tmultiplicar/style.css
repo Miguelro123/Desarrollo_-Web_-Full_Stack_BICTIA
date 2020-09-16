@@ -1,0 +1,37 @@
+body {
+    margin: 10px;
+    padding: 0;
+    background-color: brown;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    color: #6c2eb9;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: rgb(246, 183, 8);
+    font-size: xx-large;
+}
+
+div {
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 1%;
+    border: yellowgreen solid 1px;
+    border-radius: 5px 5px;
+}
+
+li {
+    /* list-style: none; */
+    text-align: center;
+    font-size: x-large;
+}
