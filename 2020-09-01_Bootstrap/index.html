@@ -2,9 +2,211 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand" href="#"><img src="imagenes/logos-1.png" class="rounded-circle" alt="logo" width="70px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse letra" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Playlist</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Top Artistas
+                  </a>
+                  <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ariana Grande</a>
+                    <a class="dropdown-item" href="#">J-balvin</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Lady Gaga</a>
+                    <a class="dropdown-item" href="#">Jorge Veloza</a>
+                  </div>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Generos
+                    </a>
+                    <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Vallenato</a>
+                      <a class="dropdown-item" href="#">Salsa</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Chillout</a>
+                      <a class="dropdown-item" href="#">Rock</a>
+                    </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Busca por Artista o Genero" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 boton" type="submit">Buscar</button>
+              </form>
+            </div>
+    </nav>
+
+</header>
+
+<main>
+<!-- Fila -->
+<div class="container">
+    <div class="row mt-5 border border-primary p-3">
+        <!-- lg - pantallas > 992px: Portaliles o Escritorios
+             md - pantallas > 768px: Tables Ipads
+             sm - pantallas > 576px: celulares -->
+            <div class="col-lg-3 col-md-6 col-sm-12 order-2 order-sm-1">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+            </div> 
+            <div class="col-lg-3 col-md-6 col-sm-12 order-1 order-sm-2"><img src="imagenes/descarga (1).jpg" class="img-fluid" alt="musica1"></div>
+            <div class="col-lg-3 col-md-6 col-sm-12 order-4 order-sm-3">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 order-3 order-sm-4"><img src="imagenes/descarga (2).jpg" class="img-fluid" alt="musica2"></div>
+    </div>
+
+
+    <div class="row mt-5 p-3 text-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 order-1 order-sm-1">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)</div>
+        <div class="col-lg-4 col-md-6 col-sm-12 order-3 order-sm-2">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)</div>
+        <!-- container md container-md or offset-2-->
+        <div class="col-lg-4 col-md-6 bg-success col-sm-12 order-2 order-sm-3">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)</div>
+    </div>
+
+    <div class="row d-flex justify-countent-center mt-5">
+        <div class="col-lg-6 col-md-12 col-sm-7 offset-lg-0 offset-md-2 order-md-2 order-lg-1"><iframe width="90%" height="315" src="https://www.youtube.com/embed/SMhD4MSthwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="col-lg-6 col-md-12 col-sm-7 order-md-1 order-lg-2 text-center">
+          <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)</p>
+          <img src="imagenes/notas-musicales.svg" alt="" width="60%">
+        </div>
+    </div>
+
+  <div class="row d-flex justify-content-around mt-5">
+    <div class="col-lg-5 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center bg-primary p-3">
+        <img src="imagenes/notas-musicales.svg" alt="otro">
+        <h2 class="text-center">Registrate y obten 2 meses Gratis!!</h2>
+        <h6>"Aplican condiciones y restricciones"</h6>
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12 border border-primary">
+        <form class="p-5">
+            <div class=" row ">
+                <div class=" form-group col">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col">
+                    <label for="">Apellidos</label>
+                    <input type="text" class="form-control" placeholder="ingrese sus apellidos">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class=" form-group col">
+                    <label for="">Correo</label>
+                    <input type="email" class="form-control" placeholder="Ingrese su correo">
+                </div>
+                <div class="form-group col">
+                    <label for="">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Cree una contraseña">
+                </div>
+
+                <!-- Expresiones regulares -->
+
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputState">Pais</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>...</option>
+                          <option>Colobmia</option>
+                          <option>Perú</option>
+                          <option>Brasil</option>
+                          <option>Chile</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputZip">Teléfono</label>
+                        <input type="tel" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          * Acepta terminos y condiciones.
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                  </form>
+            </div>
+        </form>
+    </div>
+</div>
+
+</div>
+</main>
+
+<footer class="bg-primary mt-5">
+  <div class="card-deck bg-primary p-4 text-center">
+    <div class="card p-4">
+      <img src="imagenes/contacto.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Redes sociales</h5>
+        <ul>
+          <li><a href="#">Facebook-BictiaMusic</a></li>
+          <li><a href="#">Instagram-@BictiaMusic</a></li>
+          <li><a href="#">Twitter-@BictiaMusic</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card p-4">
+      <img src="imagenes/musica.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BictiaMusic</h5>
+        <p class="card-text">Bienvenido a la mejor plataforma Streaming de música en Colombia!!</p>
+      </div>
+    </div>
+    <div class="card p-4">
+      <img src="imagenes/creador.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Creadores</h5>
+        <p class="card-text">Esta aplicación ha sido creada por los mejores programadores de toda BICTIA.</p>
+        <p class="card-text"><small class="text-muted">@MiguelRodríguez</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+crossorigin="anonymous"></script>
+</body>
+</html>
