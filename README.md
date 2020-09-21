@@ -13,6 +13,8 @@ Number | Projects | Date and time
 04 | [Repaso](./2020-08-31_JS) | 31/08/2020
 05 | [Bootstrap](./2020-09-01_Bootstrap) | 01/09/2020
 06 | [Tablas de multiplicar](./2020-09-15_tmultiplicar) | 15/09/2020
+07 | [LocalStorage](./2020-09-16_localstorage) | 16/09/2020
+08 | [Taller lógica](./2020-09-18_taller_logica) | 18/09/2020
 ---
 
 ## Author
