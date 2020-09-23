@@ -15,6 +15,7 @@ Number | Projects | Date and time
 06 | [Tablas de multiplicar](./2020-09-15_tmultiplicar) | 15/09/2020
 07 | [LocalStorage](./2020-09-16_localstorage) | 16/09/2020
 08 | [Taller lógica](./2020-09-18_taller_logica) | 18/09/2020
+08 | [Reto ánsalo](./2020-09-21_reto_ansalo) | 21/09/2020
 ---
 
 ## Author
